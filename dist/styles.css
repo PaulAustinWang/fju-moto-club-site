@@ -795,8 +795,11 @@ a { color: inherit; text-decoration: none; }
   }
 
   .info-grid,
-  .home-links,
   .qr-text { grid-template-columns: 1fr; }
+
+  .home-links {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 
   .schedule-row {
     grid-template-columns: 1fr;
@@ -924,24 +927,26 @@ a { color: inherit; text-decoration: none; }
   }
 
   .home-links {
-    gap: 14px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
   }
 
   .home-link {
-    min-height: 98px;
+    min-height: 104px;
     gap: 8px;
-    padding: 18px 16px;
+    padding: 16px 12px;
   }
 
   .home-link span {
-    font-size: 1.25rem;
-    letter-spacing: 0.12em;
+    font-size: 1.12rem;
+    line-height: 1.35;
+    letter-spacing: 0.08em;
   }
 
   .home-link strong {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     line-height: 1.6;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.04em;
   }
 
   .info-grid {
@@ -1023,6 +1028,15 @@ a { color: inherit; text-decoration: none; }
     padding: 24px 14px;
   }
 
+  .home-links {
+    gap: 8px;
+  }
+
+  .home-link {
+    min-height: 96px;
+    padding: 14px 10px;
+  }
+
   .brand-line {
     letter-spacing: 1.5px;
   }
@@ -1035,5 +1049,14 @@ a { color: inherit; text-decoration: none; }
   .home-link span,
   .video-copy h3 {
     letter-spacing: 0.08em;
+  }
+
+  .home-link span {
+    font-size: 1rem;
+  }
+
+  .home-link strong {
+    font-size: 0.82rem;
+    letter-spacing: 0.02em;
   }
 }
