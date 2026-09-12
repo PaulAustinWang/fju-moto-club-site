@@ -757,25 +757,18 @@ a { color: inherit; text-decoration: none; }
   }
 
   .nav {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 8px;
     margin-bottom: 34px;
-    overflow-x: auto;
-    overflow-y: hidden;
-    padding-bottom: 8px;
-    scrollbar-width: thin;
-    -webkit-overflow-scrolling: touch;
   }
 
   .nav a {
-    flex: 0 0 auto;
     min-height: 54px;
-    min-width: 132px;
-    padding: 10px 14px;
-    font-size: 1rem;
-    letter-spacing: 0.12em;
+    min-width: 0;
+    padding: 10px 8px;
+    font-size: 0.92rem;
+    letter-spacing: 0.08em;
   }
 
   .nav a:last-child {
@@ -862,17 +855,23 @@ a { color: inherit; text-decoration: none; }
   }
 
   .nav {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
     gap: 8px;
     margin: 0 auto 30px;
   }
 
   .nav a,
   .nav a:last-child {
-    grid-column: auto;
+    grid-column: span 2;
     min-height: 48px;
-    min-width: 118px;
+    min-width: 0;
     font-size: 0.92rem;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.06em;
+  }
+
+  .nav a:nth-child(4),
+  .nav a:nth-child(5) {
+    grid-column: span 3;
   }
 
   .panel {
