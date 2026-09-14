@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="260mm" height="140mm" viewBox="0 0 260 140" role="img" aria-labelledby="title desc">
+  <title id="title">二輪社台灣機車車牌罩 260mm x 140mm</title>
+  <desc id="desc">依台灣新式普通重型、輕型、小型輕型機車號牌 260mm x 140mm 比例製作的車牌罩設計。</desc>
+  <style>
+    * {
+      print-color-adjust: exact;
+      -webkit-print-color-adjust: exact;
+    }
+  </style>
+  <defs>
+    <pattern id="grid" width="13" height="13" patternUnits="userSpaceOnUse">
+      <path d="M13 0H0V13" fill="none" stroke="#174844" stroke-width="0.2"/>
+    </pattern>
+  </defs>
+
+  <rect width="260" height="140" rx="4" fill="#0b302e"/>
+  <rect width="260" height="140" rx="4" fill="url(#grid)"/>
+  <rect x="4" y="4" width="252" height="132" rx="3" fill="#103b38" stroke="#c9a227" stroke-width="3"/>
+  <rect x="9" y="9" width="242" height="122" rx="2" fill="none" stroke="#f3ead3" stroke-width="0.9"/>
+  <rect x="13" y="13" width="234" height="114" rx="1.5" fill="none" stroke="#c9a227" stroke-width="0.55"/>
+
+  <g fill="none" stroke="#c9a227" stroke-width="1.45" stroke-linecap="square">
+    <path d="M20 34V20H43"/>
+    <path d="M240 34V20H217"/>
+    <path d="M20 106V120H43"/>
+    <path d="M240 106V120H217"/>
+  </g>
+
+  <text x="130" y="31" fill="#c9a227" font-family="Courier New, monospace" font-size="6" letter-spacing="2.1" text-anchor="middle">
+    MOTORCYCLE CLUB
+  </text>
+
+  <g transform="translate(130 40)" fill="none" stroke-linecap="butt">
+    <path d="M-34 22A34 34 0 0 1 34 22" stroke="#f3ead3" stroke-width="2"/>
+    <path d="M-26 22A26 26 0 0 1 26 22" stroke="#c9a227" stroke-width="2"/>
+    <path d="M-18 22A18 18 0 0 1 18 22" stroke="#f3ead3" stroke-width="2"/>
+    <path d="M-10 22A10 10 0 0 1 10 22" stroke="#c9a227" stroke-width="2"/>
+    <polygon points="-30,17 -26,23 -30,29 -34,23" fill="#c9a227" stroke="none"/>
+    <polygon points="30,17 34,23 30,29 26,23" fill="#c9a227" stroke="none"/>
+  </g>
+
+  <g text-anchor="middle">
+    <text x="130" y="88" fill="#c9a227" font-family="Microsoft JhengHei, Noto Sans TC, sans-serif" font-size="25" font-weight="800" letter-spacing="5.2">
+      二輪社
+    </text>
+    <text x="130" y="102" fill="#f3ead3" font-family="Microsoft JhengHei, Noto Sans TC, sans-serif" font-size="6.4" font-weight="700" letter-spacing="3.2">
+      FJCU
+    </text>
+    <text x="130" y="119" fill="#f3ead3" font-family="Courier New, monospace" font-size="5.4" letter-spacing="2.4">
+      @fju_moto2
+    </text>
+  </g>
+
+  <g stroke="#c9a227" stroke-width="0.95" fill="#7a2e2e">
+    <polygon points="130,106 134,110 130,114 126,110"/>
+    <polygon points="63,106 66,109 63,112 60,109"/>
+    <polygon points="197,106 200,109 197,112 194,109"/>
+  </g>
+
+  <g fill="none" stroke="#c9a227" stroke-width="0.7">
+    <path d="M64 110H119"/>
+    <path d="M141 110H196"/>
+  </g>
+</svg>
