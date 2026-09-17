@@ -624,11 +624,41 @@ a { color: inherit; text-decoration: none; }
   letter-spacing: 0.16em;
   text-align: center;
   padding: 18px 24px;
+  position: relative;
 }
 
 .action-link:hover {
   background: var(--gold);
   color: var(--green-deep);
+}
+
+.action-link-featured {
+  border-width: 2px;
+  box-shadow:
+    inset 0 0 0 1px rgba(243, 234, 211, 0.42),
+    0 0 0 1px rgba(201, 162, 39, 0.36);
+}
+
+.action-link-featured::before,
+.action-link-featured::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+}
+
+.action-link-featured::before {
+  inset: 10px;
+  border: 1px solid rgba(243, 234, 211, 0.5);
+}
+
+.action-link-featured::after {
+  left: 50%;
+  bottom: -8px;
+  width: 12px;
+  height: 12px;
+  background: var(--red);
+  border: 1.5px solid var(--gold);
+  transform: translateX(-50%) rotate(45deg);
 }
 
 .signup-note {
