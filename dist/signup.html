@@ -7,7 +7,7 @@
   <meta name="description" content="二輪社追蹤與報名資訊">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="signup-page">
   <main class="page-frame">
     <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
     <div class="site">
@@ -50,7 +50,10 @@
     window.addEventListener("pageshow", function (event) {
       if (event.persisted || window.location.hash) return;
       requestAnimationFrame(function () {
-        document.getElementById("signup-button").scrollIntoView({
+        var target = window.matchMedia("(max-width: 560px)").matches
+          ? document.querySelector(".signup-actions")
+          : document.getElementById("signup-button");
+        target.scrollIntoView({
           behavior: "instant",
           block: "start"
         });

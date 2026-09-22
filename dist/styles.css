@@ -28,6 +28,41 @@ body {
 
 a { color: inherit; text-decoration: none; }
 
+@media (max-width: 560px) {
+  .signup-page .page-frame {
+    padding: 12px;
+  }
+
+  .signup-page .page-frame::before,
+  .signup-page .page-frame::after,
+  .signup-page .corner,
+  .signup-page .panel::before,
+  .signup-page .panel::after {
+    display: none;
+  }
+
+  .signup-page .site {
+    width: 100%;
+  }
+
+  .signup-page .panel {
+    padding: 0;
+    border: 0;
+    background: transparent;
+  }
+
+  .signup-page .action-link {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .signup-page .signup-actions {
+    min-height: calc(100svh - 24px);
+    grid-template-rows: auto repeat(3, minmax(92px, 1fr));
+    scroll-margin-top: 12px;
+  }
+}
+
 .site-footer {
   margin-top: 42px;
   letter-spacing: 0;
