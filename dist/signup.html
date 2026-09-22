@@ -28,7 +28,7 @@
               <strong>期初社大抽獎</strong>
               <span>將抽出機車相關商品，包含安全帽、手套等。</span>
             </div>
-            <a class="action-link action-link-featured" href="https://docs.google.com/forms/d/e/1FAIpQLSe4YutBkOrndADf1ujU_Uo2syAfXAKAXECCnLeVqVPBQrpXyQ/viewform?usp=dialog" target="_blank" rel="noopener">期初社大報名</a>
+            <a id="signup-button" class="action-link action-link-featured" style="scroll-margin-top: 24px" href="https://docs.google.com/forms/d/e/1FAIpQLSe4YutBkOrndADf1ujU_Uo2syAfXAKAXECCnLeVqVPBQrpXyQ/viewform?usp=dialog" target="_blank" rel="noopener">期初社大報名</a>
             <a class="action-link action-link-featured" href="https://line.me/ti/g2/7kZ_EZos6vFQTks034dbhrnM7n7P6Bf-hI3Kjw?utm_source=invitation&amp;utm_medium=link_copy&amp;utm_campaign=default" target="_blank" rel="noopener">加入新生LINE群組</a>
             <a class="action-link" href="https://www.instagram.com/fju_moto2/" target="_blank" rel="noopener">追蹤 IG</a>
           </div>
@@ -36,6 +36,17 @@
       </section>
     </div>
   </main>
+  <script>
+    window.addEventListener("pageshow", function (event) {
+      if (event.persisted || window.location.hash) return;
+      requestAnimationFrame(function () {
+        document.getElementById("signup-button").scrollIntoView({
+          behavior: "instant",
+          block: "start"
+        });
+      });
+    });
+  </script>
 </body>
 </html>
 
