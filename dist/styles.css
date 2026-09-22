@@ -30,7 +30,7 @@ a { color: inherit; text-decoration: none; }
 
 @media (max-width: 560px) {
   .signup-page .page-frame {
-    padding: 12px;
+    padding: 0;
   }
 
   .signup-page .page-frame::before,
@@ -57,9 +57,10 @@ a { color: inherit; text-decoration: none; }
   }
 
   .signup-page .signup-actions {
-    min-height: calc(100svh - 24px);
+    min-height: 100vh;
+    min-height: 100dvh;
     grid-template-rows: auto repeat(3, minmax(92px, 1fr));
-    scroll-margin-top: 12px;
+    scroll-margin-top: 0;
   }
 }
 
